@@ -50,6 +50,7 @@ function Header() {
             <button
               className="inline-flex items-center justify-center p-2 rounded-md text-green-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
               onClick={() => setIsClick(!isClick)}
+              aria-label={isClick ? "Close menu" : "Open menu"}
             >
               {isClick ? (
                 <svg
