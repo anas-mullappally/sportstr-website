@@ -3,10 +3,10 @@ import React from "react";
 
 function AdvantageSection() {
   return (
-    <div className="w-full md:px-20 px-8 ">
-      <div className="w-full ">
+    <div className="w-full">
+      <div className="w-full  md:px-36 px-8  ">
         <h1 className=" text-2xl md:text-5xl font-semibold text-center ">
-          The SportStr <span className="text-green-500">Advantage</span>
+          The SportStr <span className="text-green-600">Advantage</span>
         </h1>
 
         <div className="w-full md:mt-20 mt-14">
@@ -38,12 +38,13 @@ function AdvantageSection() {
                 operations smooth and organized.
               </p>
             </div>
-            <div className=" hidden md:flex items-center  w-1/2">
+            <div className=" hidden md:flex md:w-1/2 w-full justify-end">
               <Image
                 src="/info-board.webp"
                 alt="info-board"
                 width={457}
                 height={334}
+                className=""
               />
             </div>
           </div>
@@ -63,7 +64,7 @@ function AdvantageSection() {
               <h2 className="font-semibold text-xl">FOR COACHES</h2>
               {/* Image for the mobile view */}
 
-              <div className="md:w-1/2 w-full  md:hidden">
+              <div className="md:w-1/2 w-full  md:hidden ">
                 <Image
                   src="/calendar.webp"
                   alt="calendar"
@@ -108,7 +109,7 @@ function AdvantageSection() {
                 operations smooth and organized.
               </p>
             </div>
-            <div className="md:w-1/2 w-full hidden md:block">
+            <div className="md:w-1/2 w-full hidden md:flex justify-end">
               <Image
                 src="/calendar.webp"
                 alt="calendar"
