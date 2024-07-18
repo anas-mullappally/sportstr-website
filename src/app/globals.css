@@ -72,4 +72,13 @@
   .bg-spotify-gradient {
     background: linear-gradient(to right, #1ed760 0%, #1ed760 0%, #00501c 100%);
   }
+
+  .bg-main-gradient {
+    background: linear-gradient(
+      to top right,
+      #e1e9e6 10%,
+      #ffffff 75%,
+      #d2e5de 100%
+    );
+  }
 }
