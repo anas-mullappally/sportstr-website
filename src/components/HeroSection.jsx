@@ -35,7 +35,7 @@ function HeroSection() {
       <div className="relative lg:w-2/5 md:w-1/2 w-full min-h-[540px]">
         <div className="relative w-full max-w-[516px] h-auto ">
           <Image
-            src="/hero.webp"
+            src="/cricketer.webp"
             alt="hero-image"
             width={516}
             height={516}
