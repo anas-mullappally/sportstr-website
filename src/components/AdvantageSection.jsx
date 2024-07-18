@@ -50,14 +50,13 @@ function AdvantageSection() {
 
           {/* For coaches Section */}
 
-          <div className="flex items-center w-full text-center md:text-left gap-10 my-24">
+          <div className="flex items-center w-full  text-center md:text-left gap-10 my-24">
             <div className="md:w-1/2 w-full hidden md:block">
               <Image
                 src="/calendar.webp"
                 alt="calendar"
                 width={522}
                 height={524}
-                className="w-full"
               />
             </div>
             <div className=" md:w-1/2 w-full flex flex-col gap-5">
@@ -86,7 +85,7 @@ function AdvantageSection() {
 
           {/* For Athletes/Trainees Section */}
 
-          <div className="flex items-center w-full text-center gap-10">
+          <div className="flex items-center w-full text-center gap-10 md:text-left ">
             <div className=" md:w-1/2 w-full flex flex-col gap-5">
               <h2 className="font-semibold text-xl">FOR ATHLETES/TRAINEES</h2>
 
