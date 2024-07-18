@@ -40,7 +40,7 @@ function HeroSection() {
 
       <button
         id="start-button"
-        className=" hidden md:block text-white py-3 px-2 rounded-2xl bg-spotify-gradient"
+        className=" md:hidden  text-white py-3 px-2 rounded-2xl bg-spotify-gradient"
         aria-label="Start for less than a cost of a coffee per student"
       >
         <span className="text-base">Start for less</span>
