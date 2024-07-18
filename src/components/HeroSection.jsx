@@ -2,8 +2,8 @@ import Image from "next/image";
 
 function HeroSection() {
   return (
-    <div className="w-full ">
-      <div className="w-full flex px-8 py-14 md:px-36 md:py-10 items-center md:flex-row flex-col ">
+    <div className="w-full   ">
+      <div className="w-full flex px-8 pt-14 md:px-36 md:py-10 items-center md:flex-row flex-col ">
         {/* Left content section */}
         <div className="flex flex-col gap-4 md:gap-8 lg:w-3/5 md:w-1/2 text-center md:text-left">
           <h1 className="text-2xl md:text-5xl font-bold w-full">

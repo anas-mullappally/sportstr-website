@@ -5,9 +5,13 @@ import HeroSection from "@/components/HeroSection";
 export default function Home() {
   return (
     <>
-      <HeroSection />
-      <AcademyBanner />
-      <AdvantageSection />
+      <div className="bg-main-gradient">
+        <HeroSection />
+
+        <AcademyBanner />
+
+        <AdvantageSection />
+      </div>
     </>
   );
 }
