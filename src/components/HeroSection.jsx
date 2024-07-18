@@ -9,7 +9,9 @@ function HeroSection() {
         <h1 className="text-2xl md:text-5xl font-bold w-full">
           Transforming <br /> Academy Management
         </h1>
-        <Image src={"/curve.svg"} alt="logo" width={550} height={540} />
+        <div className="relative w-full max-w-[550px] h-auto">
+          <Image src="/curve.svg" alt="curve" width={550} height={540} />
+        </div>
         <p className="md:text-2xl text-base  font-medium">
           Simplify, Manage and Enhance Your <br /> Coaching Operations
         </p>
@@ -26,14 +28,17 @@ function HeroSection() {
 
       {/* Right image section */}
 
-      <div className="lg:w-2/5 md:w-1/2 w-full ">
-        <Image
-          src={"/hero.webp"}
-          alt="logo"
-          width={516}
-          height={28}
-          className="w-full"
-        />
+      <div className="relative lg:w-2/5 md:w-1/2 w-full">
+        <div className="relative w-full max-w-[516px] h-auto">
+          <Image
+            src="/hero.webp"
+            alt="hero-image"
+            width={516}
+            height={516}
+            className="w-full"
+            priority
+          />
+        </div>
       </div>
 
       {/* Mobile button */}
