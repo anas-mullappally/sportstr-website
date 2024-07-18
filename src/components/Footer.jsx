@@ -13,15 +13,15 @@ function Footer() {
           Stay updated with the latest features and releases.
         </p>
 
-        <div className="mt-3 mb-2 flex flex-col items-center sm:flex-row sm:items-start gap-2">
+        <div className="mt-3 mb-2 flex flex-col items-center sm:flex-row sm:items-start gap-2 ">
           <input
             type="email"
             id="helper-text"
             aria-describedby="helper-text-explanation"
-            className="lg:w-[585px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
+            className="lg:w-[585px] h-[50px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
             placeholder="Enter your email"
           />
-          <Button variant="subscribe" className="w-[200px] h-[42px]">
+          <Button variant="subscribe" className="w-[200px] h-[50px]">
             Subscribe
           </Button>
         </div>
@@ -68,22 +68,22 @@ function Footer() {
       </div>
       <div>
         <Separator className="mt-6 mb-4" />
-        <div className="md:flex md:items-center md:justify-between">
-          <div className="flex gap-6">
-            <span className="text-sm  sm:text-center">
-              © 2023 <Link href="/">Sportstr™</Link>. All Rights Reserved.
+        <div className="flex flex-col-reverse md:flex-row md:items-center md:justify-between gap-6">
+          <div className="flex gap-6 sm:gap-4">
+            <span className="text-sm block  sm:text-center ">
+              © 2023 <Link href="#">Sportstr™</Link>. All Rights Reserved.
             </span>
-            <span className="text-sm hover:text-green-600 sm:text-center">
-              <Link href="/">Privacy Policy</Link>
+            <span className="text-sm block hover:text-green-600 sm:text-center">
+              <Link href="#">Privacy Policy</Link>
             </span>
-            <span className="text-sm hover:text-green-600 sm:text-center">
-              <Link href="/">Terms of Service</Link>
+            <span className="text-sm block hover:text-green-600 sm:text-center">
+              <Link href="#">Terms of Service</Link>
             </span>
-            <span className="text-sm hover:text-green-600 sm:text-center">
-              <Link href="/">Cookie Setting</Link>
+            <span className="text-sm block hover:text-green-600 sm:text-center">
+              <Link href="#">Cookie Setting</Link>
             </span>
           </div>
-          <div className="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
+          <div className="flex mt-4 sm:justify-center  space-x-5 rtl:space-x-reverse">
             <Link href="#" className=" hover:text-green-600 ">
               <svg
                 className="w-4 h-4"

@@ -11,7 +11,7 @@ function Header() {
         <div className="flex items-center justify-between h-full">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <Link href="/" className="text-white">
+              <Link href="#" className="text-white">
                 <Image src={"/logo.svg"} alt="logo" width={150} height={20} />
               </Link>
             </div>
@@ -19,30 +19,30 @@ function Header() {
 
           <div className="hidden md:block">
             <div className="ml-4 flex items-center space-x-4">
-              <a
-                href="/"
+              <Link
+                href="#"
                 className="text-white hover:text-green-600  rounded-lg p-2"
               >
                 Home
-              </a>
-              <a
-                href="/about"
+              </Link>
+              <Link
+                href="#"
                 className="text-white hover:text-green-600  rounded-lg p-2"
               >
                 About
-              </a>
-              <a
-                href="/features"
+              </Link>
+              <Link
+                href="#"
                 className="text-white hover:text-green-600  rounded-lg p-2"
               >
                 Features
-              </a>
-              <a
-                href="/contact"
+              </Link>
+              <Link
+                href="#"
                 className="text-white hover:text-green-600  rounded-lg p-2"
               >
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -92,7 +92,7 @@ function Header() {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-2  space-y-1 sm:px-3">
               <a
-                href="/"
+                href="#"
                 className="text-white block hover:bg-white hover:text-black rounded-lg p-2"
               >
                 Home
