@@ -91,30 +91,30 @@ function Header() {
         <>
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-2  space-y-1 sm:px-3">
-              <a
+              <Link
                 href="#"
                 className="text-white block hover:bg-white hover:text-black rounded-lg p-2"
               >
                 Home
-              </a>
-              <a
-                href="/about"
+              </Link>
+              <Link
+                href="#"
                 className="text-white block hover:bg-white hover:text-black rounded-lg p-2"
               >
                 About
-              </a>
-              <a
-                href="/features"
+              </Link>
+              <Link
+                href="#"
                 className="text-white block hover:bg-white hover:text-black rounded-lg p-2"
               >
                 Features
-              </a>
-              <a
-                href="/contact"
+              </Link>
+              <Link
+                href="#"
                 className="text-white block hover:bg-white hover:text-black rounded-lg p-2"
               >
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
         </>
