@@ -41,7 +41,7 @@ function AdvantageSection() {
             <div className=" hidden md:flex items-center  w-1/2">
               <Image
                 src="/info-board.webp"
-                alt="info-boards"
+                alt="info-board"
                 width={457}
                 height={334}
               />
