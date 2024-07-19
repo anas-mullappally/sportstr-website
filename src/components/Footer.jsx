@@ -32,57 +32,47 @@ function Footer() {
       </div>
       {/* Quick Links */}
       <div className="mt-5">
-        <h3 className="text-3xl">Quick Links</h3>
-        <div className="mt-4 flex  flex-wrap lg:flex-nowrap lg:w-[800px] gap-6">
-          <div className=" sm:w-1/4 lg:w-auto  flex justify-center lg:justify-start">
-            <Link href={"/"} className="block  hover:text-green-600">
+        <h3 className="text-3xl my-3">Quick Links</h3>
+        <div className="flex flex-col lg:flex-row lg:gap-10">
+          <div className="w-full lg:w-auto flex justify-start">
+            <Link href={"/#"} className="block hover:text-green-600">
               Home
             </Link>
           </div>
-          <div className=" sm:w-1/4 lg:w-auto  flex justify-center lg:justify-start">
-            <Link href={"/features"} className="block hover:text-green-600">
+          <div className="w-full lg:w-auto flex justify-start">
+            <Link href={"/#"} className="block hover:text-green-600">
               Features
             </Link>
           </div>
-          <div className=" sm:w-1/4 lg:w-auto  flex justify-center lg:justify-start">
-            <Link href={"/pricing"} className="block hover:text-green-600">
-              Pricing
-            </Link>
-          </div>
-          <div className=" sm:w-1/4 lg:w-auto  flex justify-center lg:justify-start">
-            <Link href={"/blog"} className="block hover:text-green-600">
-              Blog
-            </Link>
-          </div>
-          <div className=" sm:w-1/4 lg:w-auto  flex justify-center lg:justify-start">
-            <Link href={"/about"} className="block hover:text-green-600">
-              About Us
-            </Link>
-          </div>
-          <div className=" sm:w-1/4 lg:w-auto  flex justify-center lg:justify-start">
-            <Link href={"/contact"} className="block hover:text-green-600">
+          <div className="w-full lg:w-auto flex justify-start">
+            <Link href={"/#"} className="block hover:text-green-600">
               Contact
             </Link>
           </div>
         </div>
       </div>
       <div>
-        <Separator className="mt-6 mb-4" />
+        <Separator className="my-3 sm:my-0" />
         <div className="flex flex-col-reverse md:flex-row md:items-center md:justify-between gap-6">
-          <div className="flex gap-6 sm:gap-4">
-            <span className="text-sm block  sm:text-center ">
-              © 2023 <Link href="#">Sportstr™</Link>. All Rights Reserved.
-            </span>
-            <span className="text-sm block hover:text-green-600 sm:text-center">
-              <Link href="#">Privacy Policy</Link>
-            </span>
-            <span className="text-sm block hover:text-green-600 sm:text-center">
-              <Link href="#">Terms of Service</Link>
-            </span>
-            <span className="text-sm block hover:text-green-600 sm:text-center">
-              <Link href="#">Cookie Setting</Link>
-            </span>
+          <div className="flex flex-wrap gap-6 sm:gap-4">
+            <div className="w-full lg:w-auto">
+              <span className="text-sm block sm:text-center">
+                © 2024 <Link href="#">Sportstr™</Link>. All Rights Reserved.
+              </span>
+            </div>
+            <div className="flex  gap-3 sm:gap-10">
+              <span className="text-sm block hover:text-green-600 sm:text-center">
+                <Link href="#">Privacy Policy</Link>
+              </span>
+              <span className="text-sm block hover:text-green-600 sm:text-center">
+                <Link href="#">Terms of Service</Link>
+              </span>
+              <span className="text-sm block hover:text-green-600 sm:text-center">
+                <Link href="#">Cookie Settings</Link>
+              </span>
+            </div>
           </div>
+
           <div className="flex mt-4 sm:justify-center  space-x-5 rtl:space-x-reverse">
             <Link href="#" className=" hover:text-green-600 ">
               <svg
