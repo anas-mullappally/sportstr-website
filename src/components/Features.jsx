@@ -71,7 +71,7 @@ function Features() {
         <div className="w-full  md:mt-20 mt-14  mb-14">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
             {features.map((feature) => (
-              <div className="bg-white  p-8" key={feature.id}>
+              <div className="bg-white p-8 border border-green-400 hover:border-green-600 rounded-md cursor-pointer" key={feature.id}>
                 <div className="flex ">
                   <Image
                     src={feature.icon}
@@ -81,14 +81,14 @@ function Features() {
                     height={150}
                   />
                 </div>
-                <div className="flex mt-6 justify-between">
-                  <div className="flex flex-col ">
-                    <h4 className="text-2xl">{feature.title}</h4>
+                <div className="flex mt-6 justify-between w-full">
+                  <div className="flex flex-col w-3/4 ">
+                    <h4 className="text-xl font-semibold">{feature.title}</h4>
                     <p className="mt-3 text-lg text-gray-400">
                       {feature.description}
                     </p>
                   </div>
-                  <div className="flex items-end ml-auto">
+                  <div className="w-1/4 flex items-end  justify-end ">
                     <Image
                       src={"/arrow.svg"}
                       alt="arrow"
