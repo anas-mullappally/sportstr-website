@@ -1,5 +1,6 @@
 import AcademyBanner from "@/components/AcademyBanner";
 import AdvantageSection from "@/components/AdvantageSection";
+import ContactUs from "@/components/ContactUs";
 import FaqSection from "@/components/FaqSection";
 import Features from "@/components/Features";
 import HeroSection from "@/components/HeroSection";
@@ -13,6 +14,7 @@ export default function Home() {
         <AdvantageSection />
         <Features />
         <FaqSection />
+        <ContactUs/>
       </div>
     </>
   );
