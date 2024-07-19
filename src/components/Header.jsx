@@ -13,7 +13,7 @@ function Header() {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <Link href="#" className="text-white">
-                <Image src={"/logo.svg"} alt="logo" width={150} height={20} />
+                <Image src={"/logo.svg"} alt="logo" width={150} height={42} />
               </Link>
             </div>
           </div>

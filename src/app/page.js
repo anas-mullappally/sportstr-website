@@ -1,6 +1,7 @@
 import AcademyBanner from "@/components/AcademyBanner";
 import AdvantageSection from "@/components/AdvantageSection";
 import FaqSection from "@/components/FaqSection";
+import Features from "@/components/Features";
 import HeroSection from "@/components/HeroSection";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
         <HeroSection />
         <AcademyBanner />
         <AdvantageSection />
+        <Features />
         <FaqSection />
       </div>
     </>
