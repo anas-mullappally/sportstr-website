@@ -8,9 +8,7 @@ export default function Home() {
     <>
       <div className="bg-main-gradient">
         <HeroSection />
-
         <AcademyBanner />
-
         <AdvantageSection />
         <FaqSection />
       </div>
