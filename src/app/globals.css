@@ -75,9 +75,9 @@
 
   .bg-main-gradient {
     background: linear-gradient(
-      to top right,
-      #e1e9e6 10%,
-      #ffffff 75%,
+      to right,
+      #daebe5 10%,
+      #ffffff 55%,
       #d2e5de 100%
     );
   }

@@ -52,7 +52,7 @@ function FaqSection() {
           <AccordionItem
             value={`item-${item.id}`}
             key={item.id}
-            className="border-2 my-5 rounded-lg py-2 px-6"
+            className="border-2 border-gray-300 my-5 rounded-lg py-2 px-6"
           >
             <AccordionTrigger className=" md:text-xl text-sm font-semibold">
               {item.title}
