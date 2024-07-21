@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <div className="bg-main-gradient">
-        <HeroSection />
+        {/* <HeroSection /> */}
         <AcademyBanner />
         <AdvantageSection />
         <Features />
