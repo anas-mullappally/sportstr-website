@@ -43,7 +43,7 @@ const faq = [
 function FaqSection() {
   return (
     <div className="md:px-36 w-full py-24 md:py-36 px-8">
-      <h1 className=" text-3xl md:text-5xl font-semibold text-center md:pb-10  pb-5">
+      <h1 className=" text-2xl md:text-5xl font-semibold text-center md:pb-10  pb-5">
         Frequently Asked <span className="text-green-500">Questions</span>
       </h1>
 

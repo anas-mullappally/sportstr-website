@@ -5,18 +5,21 @@ import FaqSection from "@/components/FaqSection";
 import Features from "@/components/Features";
 import FreeDemoBanner from "@/components/FreeDemoBanner";
 import HeroSection from "@/components/HeroSection";
+import TestimonialCarousel from "@/components/TestimonialCarousel";
 
 export default function Home() {
   return (
     <>
       <div className="bg-main-gradient">
-        {/* <HeroSection /> */}
+        <HeroSection />
         <AcademyBanner />
         <AdvantageSection />
         <Features />
+
+        <TestimonialCarousel />
         <FreeDemoBanner />
         <FaqSection />
-        <ContactUs/>
+        <ContactUs />
       </div>
     </>
   );

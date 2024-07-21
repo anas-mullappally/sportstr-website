@@ -5,7 +5,7 @@ function AdvantageSection() {
   return (
     <div className="w-full ">
       <div className="w-full md:px-36 px-8 py-14  ">
-        <h1 className=" text-3xl md:text-5xl font-semibold text-center ">
+        <h1 className=" text-2xl md:text-5xl font-semibold text-center ">
           The SportStr <span className="text-green-600">Advantage</span>
         </h1>
 
