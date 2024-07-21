@@ -2,6 +2,7 @@ import AcademyBanner from "@/components/AcademyBanner";
 import AdvantageSection from "@/components/AdvantageSection";
 import FaqSection from "@/components/FaqSection";
 import Features from "@/components/Features";
+import FreeDemoBanner from "@/components/FreeDemoBanner";
 import HeroSection from "@/components/HeroSection";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
         <AcademyBanner />
         <AdvantageSection />
         <Features />
+        <FreeDemoBanner />
         <FaqSection />
       </div>
     </>

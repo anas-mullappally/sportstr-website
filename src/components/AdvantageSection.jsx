@@ -4,8 +4,8 @@ import React from "react";
 function AdvantageSection() {
   return (
     <div className="w-full ">
-      <div className="w-full  md:px-36 px-8 py-14  ">
-        <h1 className=" text-2xl md:text-5xl font-semibold text-center ">
+      <div className="w-full md:px-36 px-8 py-14  ">
+        <h1 className=" text-3xl md:text-5xl font-semibold text-center ">
           The SportStr <span className="text-green-600">Advantage</span>
         </h1>
 
@@ -14,7 +14,7 @@ function AdvantageSection() {
 
           <div className="flex items-center w-full gap-10 text-center md:text-left ">
             <div className="w-full  md:w-1/2 flex flex-col gap-5   ">
-              <h2 className="font-semibold md:text-xl  text-sm  ">
+              <h2 className="font-semibold md:text-2xl ">
                 FOR ACADEMY OWNERS & <br />
                 ADMINISTRATORS
               </h2>
@@ -61,9 +61,7 @@ function AdvantageSection() {
               />
             </div>
             <div className=" md:w-1/2 w-full flex flex-col gap-5">
-              <h2 className="font-semibold md:text-xl  text-sm ">
-                FOR COACHES
-              </h2>
+              <h2 className="font-semibold md:text-2xl">FOR COACHES</h2>
               {/* Image for the mobile view */}
 
               <div className="md:w-1/2 w-full  md:hidden ">
@@ -90,7 +88,7 @@ function AdvantageSection() {
 
           <div className="flex items-center w-full text-center gap-10 md:text-left ">
             <div className=" md:w-1/2 w-full flex flex-col gap-5">
-              <h2 className="font-semibold md:text-xl  text-sm ">
+              <h2 className="font-semibold md:text-2xl ">
                 FOR ATHLETES/TRAINEES
               </h2>
 

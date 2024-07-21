@@ -81,4 +81,12 @@
       #d2e5de 100%
     );
   }
+
+  .bg-custom-image {
+    background-image: url("/path/to/your/image.jpg");
+  }
+
+  .bg-free-demo {
+    background-color: #f3f3f3;
+  }
 }

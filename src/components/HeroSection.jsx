@@ -6,7 +6,7 @@ function HeroSection() {
       <div className="w-full flex px-8 pt-14 md:px-36 md:py-10 items-center md:flex-row flex-col ">
         {/* Left content section */}
         <div className="flex flex-col gap-4 md:gap-8 lg:w-3/5 md:w-1/2 text-center md:text-left">
-          <h1 className="text-2xl md:text-5xl font-bold w-full">
+          <h1 className="text-2xl md:text-5xl font-bold w-full md:leading-[60px] ">
             Transforming <br /> Academy Management
           </h1>
           <div className="relative w-full max-w-[550px] h-auto ">
@@ -18,8 +18,9 @@ function HeroSection() {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
-          <p className="md:text-2xl text-base font-medium">
-            Simplify, Manage and Enhance Your <br /> Coaching Operations
+          <p className="md:text-2xl text-base font-medium md:leading-10">
+            Simplify, Manage and Enhance Your <br />
+            Coaching Operations
           </p>
           <button
             id="start-button"
