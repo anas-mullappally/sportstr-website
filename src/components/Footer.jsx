@@ -5,7 +5,7 @@ import { Separator } from "./ui/separator";
 
 function Footer() {
   return (
-    <footer className="bg-black text-white p-10 flex flex-col gap-5">
+    <footer className="bg-black text-white flex flex-col gap-5 md:px-36 w-full py-12 px-8">
       {/* news letter */}
       <div>
         <h3 className="text-[20px]">Newsletter</h3>

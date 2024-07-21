@@ -71,7 +71,7 @@ function Features() {
         <div className="w-full  md:mt-20 mt-14  mb-14">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
             {features.map((feature) => (
-              <div className="bg-white p-8 border border-green-400 hover:border-green-600 rounded-md cursor-pointer" key={feature.id}>
+              <div className="bg-white p-8 border border-green-400 hover:border-green-600 rounded-md cursor-pointer hover:shadow-custom"  key={feature.id}>
                 <div className="flex ">
                   <Image
                     src={feature.icon}
