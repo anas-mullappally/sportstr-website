@@ -19,7 +19,7 @@ function Header() {
           </div>
 
           <div className="hidden md:block">
-            <div className="ml-4 flex items-center space-x-4">
+            <div className="ml-4 flex items-center gap-10">
               <Link
                 href="#"
                 className="text-white hover:text-green-600  rounded-lg p-2"

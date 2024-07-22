@@ -50,7 +50,7 @@ function ContactUs() {
         <div className=" p-10 w-full bg-[#f6f6f6] rounded-md flex flex-col gap-6">
           <div className="flex flex-col items-center justify-center h-full">
             <Image
-              src={"/logo.svg"}
+              src={"/logo_black.png"}
               className="bg"
               alt="logo"
               width={150}
