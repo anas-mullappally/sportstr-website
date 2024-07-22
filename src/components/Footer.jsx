@@ -104,7 +104,7 @@ function Footer() {
             </Link>
             <Link href="#" className=" hover:text-green-600 ">
               <Image
-                src={"/linkedin.svg"}
+                src={"/linkedIn.svg"}
                 alt="linkedIn-logo"
                 width={83}
                 height={82}
