@@ -69,22 +69,43 @@
 }
 
 @layer utilities {
+  /* button gradient */
+
   .bg-spotify-gradient {
     background: linear-gradient(to right, #1ed760 0%, #1ed760 0%, #00501c 100%);
   }
 
+  /* hero section gradient */
+
   .bg-main-gradient {
     background: linear-gradient(
-      to right,
+      to top left,
       #daebe5 10%,
       #ffffff 55%,
       #d2e5de 100%
     );
   }
 
+  .bg-advantage-gradient {
+    background: linear-gradient(
+      to top right,
+      #ffffff 10%,
+      #ffffff 55%,
+      #d2e5de 100%
+    );
+  }
+
+  /* academy banner  background color */
+
+  .bg-academy {
+    background-color: #d2e5de;
+  }
+
   .bg-custom-image {
     background-image: url("/path/to/your/image.jpg");
   }
+
+  /* free demo banner background color */
 
   .bg-free-demo {
     background-color: #f3f3f3;

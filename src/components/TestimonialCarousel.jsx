@@ -54,7 +54,7 @@ function TestimonialCarousel() {
   );
 
   return (
-    <div className="flex flex-col items-center justify-center gap-8 md:px-36 px-8 w-full py-24 my-10 ">
+    <div className="flex flex-col items-center justify-center gap-8 md:px-36 px-8 w-full py-24 my-10  ">
       <h1 className=" text-2xl md:text-5xl font-semibold text-center md:pb-10  pb-5">
         What Our<span className="text-green-500"> Users Are Saying?</span>
       </h1>

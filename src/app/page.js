@@ -10,9 +10,9 @@ import TestimonialCarousel from "@/components/TestimonialCarousel";
 export default function Home() {
   return (
     <>
-      <div className="bg-main-gradient">
+      <div>
         <HeroSection />
-        <AcademyBanner />
+        {/* <AcademyBanner /> */}
         <AdvantageSection />
         <Features />
 
