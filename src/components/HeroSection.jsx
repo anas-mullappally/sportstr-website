@@ -2,8 +2,8 @@ import Image from "next/image";
 
 function HeroSection() {
   return (
-    <div className="w-full   ">
-      <div className="w-full flex px-8 pt-14 md:px-36 md:py-10 items-center md:flex-row flex-col ">
+    <div className="w-full   bg-main-gradient py-16">
+      <div className="w-full flex px-8 pt-14 md:px-36 md:py-10 items-center md:flex-row flex-col">
         {/* Left content section */}
         <div className="flex flex-col gap-4 md:gap-8 lg:w-3/5 md:w-1/2 text-center md:text-left">
           <h1 className="text-2xl md:text-5xl font-bold w-full md:leading-[60px] ">
@@ -58,6 +58,34 @@ function HeroSection() {
           <br />
           <span className="text-xs">than a cost of a coffee per student</span>
         </button>
+      </div>
+
+      {/* Academy Banner */}
+
+      <div className="w-full md:px-36 px-8 mt-28">
+        <div className="border border-green-500 rounded-3xl -rotate-3 md:p-3">
+          <div className="flex flex-col md:flex-row items-center justify-between rounded-3xl bg-gray-50 drop-shadow-xl px-8 py-4 rotate-3">
+            <div>
+              <h2 className="text-xl md:text-4xl font-semibold md:leading-10 leading-6">
+                Find more time to spend on making <br /> your academy ace.
+              </h2>
+              <p className="font-semibold text-xs md:text-xl mt-5 ">
+                Become a digital savvy academy in less than a week.
+                <br /> Save time, efforts and cost of tedious administrative
+                tasks.
+              </p>
+            </div>
+            <div>
+              <Image
+                alt="macbook"
+                src={"/macbook.webp"}
+                width={357}
+                height={334}
+                className="h-48 w-48 md:h-full md:w-auto"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

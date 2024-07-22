@@ -3,7 +3,7 @@ import React from "react";
 
 function AdvantageSection() {
   return (
-    <div className="w-full ">
+    <div className="w-full bg-advantage-gradient ">
       <div className="w-full md:px-36 px-8 py-14  ">
         <h1 className=" text-2xl md:text-5xl font-semibold text-center ">
           The SportStr <span className="text-green-600">Advantage</span>
@@ -29,7 +29,7 @@ function AdvantageSection() {
                   height={334}
                 />
               </div>
-              <p className="text-sm text-gray-500 leading-6">
+              <p className=" text-gray-500 leading-6">
                 Streamline every aspect of academy management from scheduling to
                 attendance management to communication to billing and payment
                 collections. With automated notifications and a centralized
@@ -73,7 +73,7 @@ function AdvantageSection() {
                   className="w-full"
                 />
               </div>
-              <p className="text-sm text-gray-500 leading-6">
+              <p className=" text-gray-500 leading-6">
                 Streamline every aspect of academy management from scheduling to
                 attendance management to communication to billing and payment
                 collections. With automated notifications and a centralized
@@ -102,7 +102,7 @@ function AdvantageSection() {
                   height={524}
                 />
               </div>
-              <p className="text-sm text-gray-500 leading-6">
+              <p className=" text-gray-500 leading-6">
                 Streamline every aspect of academy management from scheduling to
                 attendance management to communication to billing and payment
                 collections. With automated notifications and a centralized
