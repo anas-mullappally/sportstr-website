@@ -3,10 +3,11 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "./ui/textarea";
 import Image from "next/image";
 import { Button } from "./ui/button";
+import { GoogleMapsEmbed } from "@next/third-parties/google";
 
 function ContactUs() {
   return (
-    <div className="md:px-36 w-full py-24 md:py-36 px-8">
+    <div className="md:px-36 w-full pb-24 md:pb-36 px-8">
       <h1 className=" text-2xl md:text-5xl font-semibold text-center md:pb-10  pb-5">
         Contact <span className="text-green-500">Us</span>
       </h1>
@@ -63,11 +64,20 @@ function ContactUs() {
         </div>
       </div>
       {/* MAP  */}
-      <div className="p-10 w-full flex items-center justify-center ">
+      <div className="pt-14 w-full flex items-center justify-center flex-col gap-4">
         <h4 className="text-2xl font-semibold hidden md:block">
           Additional Contact Info
         </h4>
-     
+        <div className="map-container w-full h-[350px] rounded-lg md:mt-5 bg-black overflow-hidden">
+          <GoogleMapsEmbed
+            apiKey={process.env.NEXT_PUBLIC_GOOGLE_API}
+            height={350}
+            width="100%"
+            mode="place"
+            q="WHF9+FC Bengaluru, Karnataka, India"
+            className="rounded-lg"
+          />
+        </div>
       </div>
     </div>
   );
