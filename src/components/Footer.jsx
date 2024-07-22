@@ -8,7 +8,7 @@ function Footer() {
     <footer className="bg-black text-white flex flex-col gap-5 md:px-36 w-full py-12 px-8">
       {/* news letter */}
       <div>
-        <h3 className="text-[20px]">Newsletter</h3>
+        <h2 className="text-[20px]">Newsletter</h2>
         <p className="text-[15px] mt-6 mb-4 ">
           Stay updated with the latest features and releases.
         </p>
