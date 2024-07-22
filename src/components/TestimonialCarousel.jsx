@@ -92,7 +92,7 @@ function TestimonialCarousel() {
                     </div>
 
                     <div>
-                      <p className="text-xs text-gray-400 leading-5">
+                      <p className="text-xs text-gray-500 leading-5">
                         {testimony.review}
                       </p>
                     </div>

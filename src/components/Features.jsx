@@ -84,7 +84,7 @@ function Features() {
                 <div className="flex mt-6 justify-between w-full">
                   <div className="flex flex-col w-3/4 ">
                     <h2 className="text-xl font-semibold">{feature.title}</h2>
-                    <p className="mt-3 text-lg text-gray-400">
+                    <p className="mt-3 text-lg text-gray-500">
                       {feature.description}
                     </p>
                   </div>
