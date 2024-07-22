@@ -13,7 +13,7 @@ function Footer() {
           Stay updated with the latest features and releases.
         </p>
 
-        <div className="mt-3 mb-2 flex flex-col items-center sm:flex-row sm:items-start gap-2 ">
+        <div className="mt-3 mb-2 flex flex-col  sm:flex-row gap-2 ">
           <input
             type="email"
             id="helper-text"
