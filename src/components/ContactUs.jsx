@@ -57,7 +57,7 @@ function ContactUs() {
               height={42}
             />
             <h1 className="text-2xl font-semibold my-4">Address</h1>
-            <p className="text-[#808080]">
+            <p className="text-gray-500">
               Showing the location of the SportStr office
             </p>
           </div>
@@ -68,7 +68,7 @@ function ContactUs() {
         <h4 className="text-2xl font-semibold hidden md:block">
           Additional Contact Info
         </h4>
-        <div className="map-container w-full h-[350px] rounded-lg md:mt-5 bg-black overflow-hidden">
+        <div className="map-container w-full h-[350px] rounded-lg md:mt-5 overflow-hidden">
           <GoogleMapsEmbed
             apiKey={process.env.NEXT_PUBLIC_GOOGLE_API}
             height={350}
