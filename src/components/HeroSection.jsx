@@ -13,8 +13,8 @@ function HeroSection() {
             <Image
               src="/curve.svg"
               alt="curve"
-              width={550}
-              height={540}
+              width={523}
+              height={35}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
@@ -39,10 +39,10 @@ function HeroSection() {
             <Image
               src="/cricketer.webp"
               alt="hero-image"
-              width={516}
-              height={516}
-              className="w-full h-full"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              width={1144}
+              height={1047}
+              // className="w-full h-full"
+              // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               priority
             />
           </div>
