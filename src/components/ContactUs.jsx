@@ -76,6 +76,7 @@ function ContactUs() {
             mode="place"
             q="WHF9+FC Bengaluru, Karnataka, India"
             className="rounded-lg"
+            title="Map of Bengaluru, Karnataka, India"
           />
         </div>
       </div>
