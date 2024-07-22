@@ -77,7 +77,7 @@ function Footer() {
           <div className="flex mt-4 sm:justify-center  space-x-5 rtl:space-x-reverse">
             <Link href="#" className=" hover:text-green-600 ">
               <Image
-                src={"/facebook.svg"}
+                src={"/fb-logo.svg"}
                 alt="facebook-logo"
                 width={83}
                 height={82}
