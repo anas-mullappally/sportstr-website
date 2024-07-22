@@ -100,10 +100,6 @@ function Features() {
                 </div>
               </div>
             ))}
-            {/* <div className="h-[286px] bg-black"></div>
-            <div className="h-[286px] bg-black"></div>
-            <div className="h-[286px] bg-black"></div>
-            <div className="h-[286px] bg-black"></div> */}
           </div>
         </div>
       </div>
