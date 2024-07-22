@@ -42,9 +42,8 @@ function AdvantageSection() {
               <Image
                 src="/info-board.webp"
                 alt="info-board"
-                width={457}
-                height={334}
-                className=""
+                width={1080}
+                height={831}
               />
             </div>
           </div>
