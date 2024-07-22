@@ -56,8 +56,8 @@ function AdvantageSection() {
               <Image
                 src="/calendar.webp"
                 alt="calendar"
-                width={522}
-                height={524}
+                width={1080}
+                height={805}
               />
             </div>
             <div className=" md:w-1/2 w-full flex flex-col gap-5">
@@ -68,8 +68,8 @@ function AdvantageSection() {
                 <Image
                   src="/calendar.webp"
                   alt="calendar"
-                  width={522}
-                  height={524}
+                  width={1080}
+                  height={805}
                   className="w-full"
                 />
               </div>
@@ -98,8 +98,8 @@ function AdvantageSection() {
                 <Image
                   src="/calendar.webp"
                   alt="calendar"
-                  width={522}
-                  height={524}
+                  width={1080}
+                  height={805}
                 />
               </div>
               <p className="text-sm text-gray-500 leading-6">
@@ -115,8 +115,8 @@ function AdvantageSection() {
               <Image
                 src="/calendar.webp"
                 alt="calendar"
-                width={522}
-                height={524}
+                width={1080}
+                height={805}
               />
             </div>
           </div>
