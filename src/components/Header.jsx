@@ -8,7 +8,7 @@ function Header() {
   const [isClick, setIsClick] = useState(false);
   return (
     <nav className="bg-black h-[80px] sticky top-0 z-50">
-      <div className=" px-4 sm:px-6 lg:pr-48 lg:pl-36 h-full">
+      <div className=" px-4 sm:px-6 lg:pr-36 lg:pl-36 h-full">
         <div className="flex items-center justify-between h-full">
           <div className="flex items-center">
             <div className="flex-shrink-0">
@@ -94,12 +94,6 @@ function Header() {
                 className="text-white block hover:bg-white hover:text-black rounded-lg p-2"
               >
                 Home
-              </Link>
-              <Link
-                href="#"
-                className="text-white block hover:bg-white hover:text-black rounded-lg p-2"
-              >
-                About
               </Link>
               <Link
                 href="#"
