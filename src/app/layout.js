@@ -6,9 +6,26 @@ import Footer from "@/components/Footer";
 const cabin = Cabin({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "sportstr",
-  description: "Simplify, Manage and Enhance Your Coaching Operations",
-  metadataBase: new URL("https://sportstr-website.vercel.app"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_WEB_URL),
+  title: `Welcome to Sportstr`,
+  description: `Simplify, Manage and Enhance Your Coaching Operations`,
+  alternates: {
+    canonical: `${process.env.NEXT_PUBLIC_WEB_URL}`,
+  },
+  twitter: {
+    title: "Sportstr",
+    description: `Simplify, Manage and Enhance Your Coaching Operations`,
+    images: {
+      url: `${process.env.NEXT_PUBLIC_WEB_URL}/logo.svg`,
+    },
+  },
+  openGraph: {
+    title: "Sportstr",
+    description: `Simplify, Manage and Enhance Your Coaching Operations`,
+    images: {
+      url: `${process.env.NEXT_PUBLIC_WEB_URL}/logo.svg`,
+    },
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -17,32 +34,6 @@ export default function RootLayout({ children }) {
       <head>
         {/* icon  */}
         <link rel="icon" href="/favicon.png" />
-        {/* OG tags */}
-        <meta property="og:title" content="sportstr" />
-        <meta
-          property="og:description"
-          content="Simplify, Manage and Enhance Your Coaching Operations"
-        />
-        <meta property="og:image" content="/logo.svg" />
-        <meta property="og:url" content="https://sportstr-website.vercel.app" />
-        <meta property="og:type" content="website" />
-        {/* end of og tags */}
-        {/* Twitter tag */}
-        <meta name="twitter:card" content="sportstr" />
-        <meta
-          name="twitter:title"
-          content="Simplify, Manage and Enhance Your Coaching Operations"
-        />
-        <meta
-          name="twitter:description"
-          content="Simplify, Manage and Enhance Your Coaching Operations"
-        />
-        <meta name="twitter:image" content="/logo.svg" />
-        <meta
-          name="twitter:url"
-          content="https://sportstr-website.vercel.app"
-        />
-        {/* End of twitter tags */}
       </head>
       <body className={cabin.className}>
         <Header />
