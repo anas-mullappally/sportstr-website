@@ -54,7 +54,7 @@ function FaqSection() {
             key={item.id}
             className="border-2 border-gray-300 my-5 rounded-xl py-1 px-6 "
           >
-            <AccordionTrigger className=" md:text-xl font-semibold text-left md:text-center">
+            <AccordionTrigger className="text-sm sm:text-xl font-semibold text-left md:text-center">
               {item.title}
             </AccordionTrigger>
             <AccordionContent>{item.description}</AccordionContent>
