@@ -10,7 +10,6 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-
 import Image from "next/image";
 
 function TestimonialCarousel() {
@@ -54,7 +53,7 @@ function TestimonialCarousel() {
   );
 
   return (
-    <div className="flex flex-col items-center justify-center gap-8 md:px-36 px-8 w-full py-24 my-10  ">
+    <div className="flex flex-col items-center justify-center gap-8  md:px-20 xl:px-36 w-full py-24 my-10  ">
       <h1 className=" text-2xl md:text-5xl font-semibold text-center md:pb-10  pb-5">
         What Our<span className="text-green-500"> Users Are Saying?</span>
       </h1>
@@ -65,11 +64,11 @@ function TestimonialCarousel() {
           loop: true,
         }}
         plugins={[plugin.current]}
-        className="w-full "
+        className="w-full pl-4"
       >
         <CarouselContent className="w-full">
           {testimonials.map((testimony) => (
-            <CarouselItem key={testimony.id} className="md:basis-1/2 ">
+            <CarouselItem key={testimony.id} className="md:basis-1/2 w-full">
               <div>
                 <Card>
                   <CardContent className="flex gap-5 flex-col justify-center items-center pl-10 py-5 md:py-10">
@@ -85,7 +84,7 @@ function TestimonialCarousel() {
                         <h1 className="text-2xl font-semibold">
                           {testimony.name}
                         </h1>
-                        <p className="text-xs text-gray-500">
+                        <p className="text-sm text-gray-500">
                           {testimony.occupation}
                         </p>
                       </div>

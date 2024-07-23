@@ -4,7 +4,7 @@ import React from "react";
 function AdvantageSection() {
   return (
     <div className="w-full bg-advantage-gradient ">
-      <div className="w-full md:px-36 px-8 py-14  ">
+      <div className="w-full px-8  md:px-20 xl:px-36 py-14  ">
         <h1 className=" text-2xl md:text-5xl font-semibold text-center ">
           The SportStr <span className="text-green-600">Advantage</span>
         </h1>
