@@ -64,12 +64,12 @@ function HeroSection() {
 
       <div className="w-full px-8  md:px-20 xl:px-36 mt-28 ">
         <div className="border border-green-500 rounded-3xl -rotate-3 md:p-3">
-          <div className="flex flex-col md:flex-row items-center justify-between rounded-3xl bg-academy drop-shadow-xl px-8 py-4 rotate-3">
+          <div className="flex flex-col sm:flex-row items-center justify-between rounded-3xl bg-academy drop-shadow-xl px-8 py-4 rotate-3">
             <div>
-              <h2 className="text-xl md:text-4xl font-semibold md:leading-10 leading-6">
+              <h2 className="text-xl md:text-2xl lg:text-4xl font-semibold lg:leading-10 leading-6">
                 Find more time to spend on making <br /> your academy ace.
               </h2>
-              <p className="font-semibold text-xs md:text-xl mt-5 ">
+              <p className="font-semibold text-xs md:text-base lg:text-xl mt-5 ">
                 Become a digital savvy academy in less than a week.
                 <br /> Save time, efforts and cost of tedious administrative
                 tasks.

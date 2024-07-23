@@ -70,7 +70,7 @@ function TestimonialCarousel() {
           {testimonials.map((testimony) => (
             <CarouselItem key={testimony.id} className="md:basis-1/2 w-full">
               <div>
-                <Card>
+                <Card className="relative rounded-2xl">
                   <CardContent className="flex gap-5 flex-col justify-center items-center pl-10 py-5 md:py-10">
                     <div className="flex gap-8 items-center w-full">
                       <Image
@@ -88,10 +88,17 @@ function TestimonialCarousel() {
                           {testimony.occupation}
                         </p>
                       </div>
+                      <Image
+                        src="/quote.svg"
+                        alt="quote"
+                        className="absolute right-4 top-4  hidden  sm:block"
+                        width={40}
+                        height={40}
+                      />
                     </div>
 
                     <div>
-                      <p className="text-xs text-gray-500 leading-5">
+                      <p className="text-sm  text-gray-500 leading-5">
                         {testimony.review}
                       </p>
                     </div>

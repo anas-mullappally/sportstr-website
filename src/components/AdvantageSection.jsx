@@ -4,7 +4,7 @@ import React from "react";
 function AdvantageSection() {
   return (
     <div className="w-full bg-advantage-gradient ">
-      <div className="w-full px-8  md:px-20 xl:px-36 py-14  ">
+      <div className="w-full px-8 md:px-20 xl:px-36 py-14  ">
         <h1 className=" text-2xl md:text-5xl font-semibold text-center ">
           The SportStr <span className="text-green-600">Advantage</span>
         </h1>
@@ -21,7 +21,7 @@ function AdvantageSection() {
 
               {/* Image for the mobile view */}
 
-              <div className="flex items-center  md:hidden">
+              <div className="flex items-center mx-auto  md:hidden">
                 <Image
                   src="/info-board.webp"
                   alt="info-boards"
@@ -50,7 +50,7 @@ function AdvantageSection() {
 
           {/* For coaches Section */}
 
-          <div className="flex items-center w-full  text-center md:text-left gap-10 my-24">
+          <div className="flex items-center w-full text-center md:text-left gap-10 my-24">
             <div className="md:w-1/2 w-full hidden md:block">
               <Image
                 src="/calendar.webp"
