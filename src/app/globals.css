@@ -89,8 +89,8 @@
   .bg-second-gradient {
     background: linear-gradient(
       to top right,
-      #ffffff 10%,
-      #ffffff 55%,
+      #ffffff 20%,
+      #d2e5de 55%,
       #d2e5de 100%
     );
   }

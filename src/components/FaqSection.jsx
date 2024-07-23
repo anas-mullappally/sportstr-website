@@ -57,7 +57,9 @@ function FaqSection() {
             <AccordionTrigger className="text-sm sm:text-xl font-semibold text-left md:text-center">
               {item.title}
             </AccordionTrigger>
-            <AccordionContent>{item.description}</AccordionContent>
+            <AccordionContent className="text-xs sm:text-base">
+              {item.description}
+            </AccordionContent>
           </AccordionItem>
         ))}
       </Accordion>
