@@ -61,7 +61,7 @@ function Features() {
   ];
   return (
     <div className="w-full mt-8">
-      <div className="w-full  md:px-36 px-8  ">
+      <div className="w-full xl:px-36 lg:px-20 md:px-20 px-8 ">
         <h1 className="text-2xl md:text-5xl font-semibold text-center ">
           Powerful Features for <br />{" "}
           <span className="text-green-600">
@@ -69,30 +69,30 @@ function Features() {
           </span>
         </h1>
         <div className="w-full  md:mt-20 mt-14  mb-14">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:gap-10 gap-6">
             {features.map((feature) => (
-              <div className="bg-white p-8 border border-green-400 hover:border-green-600 rounded-md cursor-pointer hover:shadow-custom"  key={feature.id}>
+              <div className="bg-white p-6 lg:p-8  border border-green-400 hover:border-green-600 rounded-md cursor-pointer hover:shadow-custom"  key={feature.id}>
                 <div className="flex ">
                   <Image
                     src={feature.icon}
                     alt={feature.title}
-                    className="w-20 h-20"
+                    className="xl:w-20 xl:h-20 w-14 h-14 md:w-14 md:h-14"
                     width={100}
                     height={150}
                   />
                 </div>
                 <div className="flex mt-6 justify-between w-full">
                   <div className="flex flex-col w-3/4 ">
-                    <h2 className="text-xl font-semibold">{feature.title}</h2>
-                    <p className="mt-3 text-lg text-gray-500">
+                    <h2 className="xl:text-xl lg:text-lg font-semibold">{feature.title}</h2>
+                    <p className="mt-3 xl:text-lg lg:text-base md:text-sm text-gray-500">
                       {feature.description}
                     </p>
                   </div>
-                  <div className="w-1/4 flex items-end  justify-end ">
+                  <div className="w-1/4 flex items-end  justify-end  ">
                     <Image
                       src={"/arrow.svg"}
                       alt="arrow"
-                      className="w-14 h-14"
+                      className="xl:w-14 xl:h-14 w-9 h-9 md:w-9 md:h-9"
                       width={100}
                       height={150}
                     />
