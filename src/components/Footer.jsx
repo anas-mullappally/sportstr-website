@@ -6,26 +6,27 @@ import Image from "next/image";
 
 function Footer() {
   return (
-    <footer className="bg-black text-white flex flex-col gap-5 md:px-36 w-full py-12 px-8">
+    <footer className="bg-black text-white flex flex-col gap-5 w-full py-12 px-8  xl:px-36 lg:px-20 md:px-20">
       {/* news letter */}
       <div>
         <h2 className="text-[20px]">Newsletter</h2>
-        <p className="text-[15px] mt-6 mb-4 ">
+        <p className="text-[15px] mt-6 mb-4">
           Stay updated with the latest features and releases.
         </p>
 
-        <div className="mt-3 mb-2 flex flex-col  sm:flex-row gap-2 ">
+        <div className="mt-3 mb-2 flex flex-col md:flex-row gap-2">
           <input
             type="email"
             id="helper-text"
             aria-describedby="helper-text-explanation"
-            className="lg:w-[585px] h-[50px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
+            className="w-full md:w-[40vw] h-[50px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
             placeholder="Enter your email"
           />
           <Button variant="subscribe" className="w-[200px] h-[50px]">
             Subscribe
           </Button>
         </div>
+
         <p id="helper-text-explanation" className="mt-3 text-sm ">
           By subscribing, you agree to our Privacy Policy and consent to receive
           updates.
@@ -53,11 +54,11 @@ function Footer() {
         </div>
       </div>
       <div>
-        <Separator className="my-3 sm:my-0" />
-        <div className="flex flex-col-reverse md:flex-row md:items-center md:justify-between gap-6">
-          <div className="flex flex-wrap gap-6 sm:gap-4">
+        <Separator className="my-3" />
+        <div className="flex flex-col-reverse md:flex-row md:items-center md:justify-between ">
+          <div className="flex flex-wrap gap-6 mt-4 md:mt-0 sm:gap-4">
             <div className="w-full lg:w-auto">
-              <span className="text-sm block sm:text-center">
+              <span className="text-sm block">
                 © 2024 <Link href="#">Sportstr™</Link>. All Rights Reserved.
               </span>
             </div>
@@ -74,7 +75,7 @@ function Footer() {
             </div>
           </div>
 
-          <div className="flex mt-4 sm:justify-center  space-x-5 rtl:space-x-reverse">
+          <div className="flex mt-4 md:mt-0 items-start space-x-5 rtl:space-x-reverse">
             <Link href="#" className=" hover:text-green-600 ">
               <Image
                 src={"/fb-logo.svg"}
