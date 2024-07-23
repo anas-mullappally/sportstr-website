@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function FreeDemoBanner() {
   return (
-    <div className="w-full px-8 md:px-36">
+    <div className="w-full px-8  md:px-20 xl:px-36">
       <div className=" w-full  border-2 bg-free-demo h-56 rounded-3xl py-10 relative text-center shadow-lg ">
         <Image
           src="/bg-free-demo-curve.svg"

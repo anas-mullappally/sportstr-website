@@ -3,7 +3,7 @@ import Image from "next/image";
 function HeroSection() {
   return (
     <div className="w-full   bg-main-gradient py-16">
-      <div className="w-full flex px-8 pt-14 md:px-36 md:py-10 items-center md:flex-row flex-col">
+      <div className="w-full flex px-8 md:px-20 xl:px-36  pt-14  md:py-10 items-center md:flex-row flex-col">
         {/* Left content section */}
         <div className="flex flex-col gap-4 md:gap-8 lg:w-3/5 md:w-1/2 text-center md:text-left">
           <h1 className="text-2xl md:text-5xl font-bold w-full md:leading-[60px] ">
@@ -62,9 +62,9 @@ function HeroSection() {
 
       {/* Academy Banner */}
 
-      <div className="w-full md:px-36 px-8 mt-28">
+      <div className="w-full px-8  md:px-20 xl:px-36 mt-28 ">
         <div className="border border-green-500 rounded-3xl -rotate-3 md:p-3">
-          <div className="flex flex-col md:flex-row items-center justify-between rounded-3xl bg-gray-50 drop-shadow-xl px-8 py-4 rotate-3">
+          <div className="flex flex-col md:flex-row items-center justify-between rounded-3xl bg-academy drop-shadow-xl px-8 py-4 rotate-3">
             <div>
               <h2 className="text-xl md:text-4xl font-semibold md:leading-10 leading-6">
                 Find more time to spend on making <br /> your academy ace.

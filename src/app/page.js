@@ -5,6 +5,7 @@ import FaqSection from "@/components/FaqSection";
 import Features from "@/components/Features";
 import FreeDemoBanner from "@/components/FreeDemoBanner";
 import HeroSection from "@/components/HeroSection";
+import Partners from "@/components/Partners";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
 
 export default function Home() {
@@ -13,9 +14,9 @@ export default function Home() {
       <div>
         <HeroSection />
         {/* <AcademyBanner /> */}
+        <Partners />
         <AdvantageSection />
         <Features />
-
         <TestimonialCarousel />
         <FreeDemoBanner />
         <FaqSection />

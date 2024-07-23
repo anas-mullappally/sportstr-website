@@ -86,7 +86,7 @@
     );
   }
 
-  .bg-advantage-gradient {
+  .bg-second-gradient {
     background: linear-gradient(
       to top right,
       #ffffff 10%,
@@ -98,7 +98,7 @@
   /* academy banner  background color */
 
   .bg-academy {
-    background-color: #d2e5de;
+    background-color: #f9fdfc;
   }
 
   .bg-custom-image {

@@ -42,8 +42,8 @@ const faq = [
 
 function FaqSection() {
   return (
-    <div className="md:px-36 w-full py-24 md:py-36 px-8">
-      <h1 className=" text-2xl md:text-5xl font-semibold text-center md:pb-10  pb-5">
+    <div className="px-8 md:px-20 xl:px-36 w-full py-24 md:py-36">
+      <h1 className=" text-2xl md:text-5xl font-semibold text-center md:pb-10 pb-5">
         Frequently Asked <span className="text-green-500">Questions</span>
       </h1>
 
@@ -52,9 +52,9 @@ function FaqSection() {
           <AccordionItem
             value={`item-${item.id}`}
             key={item.id}
-            className="border-2 border-gray-300 my-5 rounded-xl py-1 px-6"
+            className="border-2 border-gray-300 my-5 rounded-xl py-1 px-6 "
           >
-            <AccordionTrigger className=" md:text-xl font-semibold">
+            <AccordionTrigger className=" md:text-xl font-semibold text-left md:text-center">
               {item.title}
             </AccordionTrigger>
             <AccordionContent>{item.description}</AccordionContent>

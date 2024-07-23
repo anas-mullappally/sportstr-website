@@ -8,7 +8,7 @@ function Header() {
   const [isClick, setIsClick] = useState(false);
   return (
     <nav className="bg-black h-[80px] sticky top-0 z-50">
-      <div className=" px-4 sm:px-6 lg:pr-36 lg:pl-36 h-full">
+      <div className=" px-8  md:px-20 xl:px-36   h-full">
         <div className="flex items-center justify-between h-full">
           <div className="flex items-center">
             <div className="flex-shrink-0">
