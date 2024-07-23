@@ -15,7 +15,7 @@ function Partners() {
               className="mx-auto my-auto"
             />
           </div>
-          <h2 className="md:text-2xl mt-5 font-bold">Badminton Pros</h2>
+          <h2 className="text-xl md:text-2xl mt-5 font-bold">Badminton Pros</h2>
         </div>
         <div className="text-center">
           <div className="border rounded-2xl p-10  hover:border-green-600 shadow-lg hover:bg-academy">
@@ -27,7 +27,7 @@ function Partners() {
               className="mx-auto my-auto"
             />
           </div>
-          <h2 className="md:text-2xl mt-5 font-bold">
+          <h2 className="text-xl md:text-2xl mt-5 font-bold">
             Tellicherry Cricket Club
           </h2>
         </div>
