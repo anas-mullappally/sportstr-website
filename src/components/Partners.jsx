@@ -3,10 +3,10 @@ import React from "react";
 
 function Partners() {
   return (
-    <div className=" px-8  md:px-20 xl:px-36  py-24 ">
+    <div className=" px-8  md:px-20 xl:px-36  py-24 bg-second-gradient ">
       <div className="flex flex-col sm:flex-row justify-center gap-16 ">
         <div className="text-center ">
-          <div className="border rounded-2xl p-10 hover:border-green-600 shadow-lg hover:bg-academy ">
+          <div className="border rounded-2xl p-10 hover:border-green-600 shadow-lg bg-white hover:bg-academy ">
             <Image
               src="/saina-partner.svg"
               alt="partner-logo"
@@ -18,7 +18,7 @@ function Partners() {
           <h2 className="text-xl md:text-2xl mt-5 font-bold">Badminton Pros</h2>
         </div>
         <div className="text-center">
-          <div className="border rounded-2xl p-10  hover:border-green-600 shadow-lg hover:bg-academy">
+          <div className="border rounded-2xl p-10  hover:border-green-600 shadow-lg bg-white hover:bg-academy">
             <Image
               src="/tellicherry-partner.svg"
               alt="partner-logo"
