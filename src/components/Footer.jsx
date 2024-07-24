@@ -1,8 +1,10 @@
-import React from "react";
+"use client";
+
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { Separator } from "./ui/separator";
 import Image from "next/image";
+import { scrollToSection, sections } from "@/utils/utils";
 
 function Footer() {
   return (
@@ -35,23 +37,17 @@ function Footer() {
       {/* Quick Links */}
       <div className="mt-5">
         <h3 className="text-3xl my-3">Quick Links</h3>
-        <div className="flex flex-col lg:flex-row lg:gap-10">
-          <div className="w-full lg:w-auto flex justify-start">
-            <Link href={"/#"} className="block hover:text-green-600">
-              Home
-            </Link>
-          </div>
-          <div className="w-full lg:w-auto flex justify-start">
-            <Link href={"/#"} className="block hover:text-green-600">
-              Features
-            </Link>
-          </div>
-          <div className="w-full lg:w-auto flex justify-start">
-            <Link href={"/#"} className="block hover:text-green-600">
-              Contact
-            </Link>
-          </div>
-        </div>
+        <ul className="flex flex-col lg:flex-row gap-2 lg:gap-10">
+          {sections.map((menu) => (
+            <li
+              key={menu}
+              onClick={() => scrollToSection(menu)}
+              className="w-full lg:w-auto flex justify-start cursor-pointer hover:text-green-600"
+            >
+              {menu.charAt(0).toUpperCase() + menu.slice(1)}
+            </li>
+          ))}
+        </ul>
       </div>
       <div>
         <Separator className="my-3" />

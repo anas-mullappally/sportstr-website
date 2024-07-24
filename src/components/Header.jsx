@@ -3,23 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Button } from "./ui/button";
+import { scrollToSection, sections } from "@/utils/utils";
 
 function Header() {
   const [isClick, setIsClick] = useState(false);
 
-  function scrollToSection(id) {
-    const section = document.getElementById(id);
-    const yOffset = -document.querySelector("nav").offsetHeight;
-    const yPosition =
-      section.getBoundingClientRect().top + window.pageYOffset + yOffset;
-    window.scrollTo({ top: yPosition, behavior: "smooth" });
-    if (isClick) setIsClick(false);
-  }
-
-  const menu = ["home", "features", "contact"];
-
   return (
-    <nav className="bg-black h-[80px] sticky top-0 z-50">
+    <nav className="bg-black py-6 sticky top-0 z-50">
       <div className="px-8 md:px-20 xl:px-36 h-full">
         <div className="flex items-center justify-between h-full">
           <div className="flex items-center">
@@ -32,7 +22,7 @@ function Header() {
 
           <div className="hidden md:block">
             <ul className="ml-4 flex items-center gap-10 list-none">
-              {menu.map((item) => (
+              {sections.map((item) => (
                 <li
                   key={item}
                   onClick={() => scrollToSection(item)}
@@ -96,10 +86,13 @@ function Header() {
         }`}
       >
         <ul className="px-2 pt-2 pb-5 space-y-1 sm:px-3 list-none">
-          {menu.map((item) => (
+          {sections.map((item) => (
             <li
               key={item}
-              onClick={() => scrollToSection(item)}
+              onClick={() => {
+                scrollToSection(item);
+                setIsClick(false);
+              }}
               className="text-white block hover:bg-green-600  rounded-lg p-2 cursor-pointer"
             >
               {item.charAt(0).toUpperCase() + item.slice(1)}
