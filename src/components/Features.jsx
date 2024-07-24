@@ -69,9 +69,12 @@ function Features() {
           </span>
         </h1>
         <div className="w-full  md:mt-20 mt-14  mb-14">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:gap-10 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:gap-10 gap-6 lg:gap-4">
             {features.map((feature) => (
-              <div className="bg-white p-6 lg:p-8  border border-green-400 hover:border-green-600 rounded-md cursor-pointer hover:shadow-custom"  key={feature.id}>
+              <div
+                className="bg-white p-6 xl:p-8  border border-green-400 hover:border-green-600 rounded-md cursor-pointer hover:shadow-custom"
+                key={feature.id}
+              >
                 <div className="flex ">
                   <Image
                     src={feature.icon}
@@ -83,8 +86,10 @@ function Features() {
                 </div>
                 <div className="flex mt-6 justify-between w-full">
                   <div className="flex flex-col w-3/4 ">
-                    <h2 className="xl:text-xl lg:text-lg font-semibold">{feature.title}</h2>
-                    <p className="mt-3 xl:text-lg lg:text-base md:text-sm text-gray-500">
+                    <h2 className="xl:text-xl font-semibold">
+                      {feature.title}
+                    </h2>
+                    <p className="mt-3 xl:text-lg  md:text-sm text-gray-500">
                       {feature.description}
                     </p>
                   </div>
