@@ -16,6 +16,8 @@ function Header() {
     if (isClick) setIsClick(false);
   }
 
+  const menu = ["home", "features", "contact"];
+
   return (
     <nav className="bg-black h-[80px] sticky top-0 z-50">
       <div className="px-8 md:px-20 xl:px-36 h-full">
@@ -30,7 +32,7 @@ function Header() {
 
           <div className="hidden md:block">
             <ul className="ml-4 flex items-center gap-10 list-none">
-              {["home", "features", "contact"].map((item) => (
+              {menu.map((item) => (
                 <li
                   key={item}
                   onClick={() => scrollToSection(item)}
@@ -94,16 +96,16 @@ function Header() {
         }`}
       >
         <ul className="px-2 pt-2 pb-5 space-y-1 sm:px-3 list-none">
-          {["home", "features", "contact"].map((item) => (
+          {menu.map((item) => (
             <li
               key={item}
               onClick={() => scrollToSection(item)}
-              className="text-white block hover:bg-white hover:text-black rounded-lg p-2 cursor-pointer"
+              className="text-white block hover:bg-green-600  rounded-lg p-2 cursor-pointer"
             >
               {item.charAt(0).toUpperCase() + item.slice(1)}
             </li>
           ))}
-          <li>
+          <li className="p-2">
             <Button variant="subscribe" className="bg-spotify-gradient">
               Login to Admin
             </Button>
