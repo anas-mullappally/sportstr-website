@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function HeroSection() {
   return (
-    <div className="w-full   bg-main-gradient py-16">
+    <div className="w-full   bg-main-gradient py-16" id="home">
       <div className="w-full flex px-8 md:px-20 xl:px-36  pt-14  md:py-10 items-center md:flex-row flex-col">
         {/* Left content section */}
         <div className="flex flex-col gap-4 md:gap-8 lg:w-3/5 md:w-1/2 text-center md:text-left">

@@ -113,7 +113,7 @@ function ContactUs() {
   };
 
   return (
-    <div className="w-full pb-24 xl:px-36 lg:px-20 md:px-20 px-8">
+    <div className="w-full pb-24 xl:px-36 lg:px-20 md:px-20 px-8" id="contact">
       <h1 className="text-2xl md:text-5xl font-semibold text-center md:pb-10 pb-5">
         Contact <span className="text-green-500">Us</span>
       </h1>

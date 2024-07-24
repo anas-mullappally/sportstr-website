@@ -6,47 +6,50 @@ import { Button } from "./ui/button";
 
 function Header() {
   const [isClick, setIsClick] = useState(false);
+
+  function scrollToSection(id) {
+    const section = document.getElementById(id);
+    const yOffset = -document.querySelector("nav").offsetHeight;
+    const yPosition =
+      section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: yPosition, behavior: "smooth" });
+    if (isClick) setIsClick(false);
+  }
+
   return (
-    <nav className="bg-black h-[80px] sticky top-0 z-50  ">
-      <div className=" px-8  md:px-20 xl:px-36   h-full">
+    <nav className="bg-black h-[80px] sticky top-0 z-50">
+      <div className="px-8 md:px-20 xl:px-36 h-full">
         <div className="flex items-center justify-between h-full">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <Link href="#" className="text-white">
+              <Link href="#">
                 <Image src={"/logo.svg"} alt="logo" width={150} height={42} />
               </Link>
             </div>
           </div>
 
           <div className="hidden md:block">
-            <div className="ml-4 flex items-center gap-10">
-              <Link
-                href="#"
-                className="text-white hover:text-green-600  rounded-lg p-2"
-              >
-                Home
-              </Link>
-              <Link
-                href="#"
-                className="text-white hover:text-green-600  rounded-lg p-2"
-              >
-                Features
-              </Link>
-              <Link
-                href="#"
-                className="text-white hover:text-green-600  rounded-lg p-2"
-              >
-                Contact
-              </Link>
-              <Button variant="subscribe" className="bg-spotify-gradient">
-                Login to Admin
-              </Button>
-            </div>
+            <ul className="ml-4 flex items-center gap-10 list-none">
+              {["home", "features", "contact"].map((item) => (
+                <li
+                  key={item}
+                  onClick={() => scrollToSection(item)}
+                  className="text-white hover:text-green-600 rounded-lg p-2 cursor-pointer"
+                >
+                  {item.charAt(0).toUpperCase() + item.slice(1)}
+                </li>
+              ))}
+              <li>
+                <Button variant="subscribe" className="bg-spotify-gradient">
+                  Login to Admin
+                </Button>
+              </li>
+            </ul>
           </div>
 
           <div className="md:hidden flex items-center">
             <button
-              className="inline-flex items-center justify-center p-2 rounded-md text-green-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              className="inline-flex items-center justify-center p-2 rounded-full text-green-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
               onClick={() => setIsClick(!isClick)}
               aria-label={isClick ? "Close menu" : "Open menu"}
             >
@@ -85,35 +88,28 @@ function Header() {
           </div>
         </div>
       </div>
-      {isClick && (
-        <>
-          <div className="md:hidden bg-black">
-            <div className="px-2 pt-2 pb-5  space-y-1 sm:px-3">
-              <Link
-                href="#"
-                className="text-white block hover:bg-white hover:text-black rounded-lg p-2"
-              >
-                Home
-              </Link>
-              <Link
-                href="#"
-                className="text-white block hover:bg-white hover:text-black rounded-lg p-2"
-              >
-                Features
-              </Link>
-              <Link
-                href="#"
-                className="text-white block hover:bg-white hover:text-black rounded-lg p-2"
-              >
-                Contact
-              </Link>
-              <Button variant="subscribe" className="bg-spotify-gradient">
-                Login to Admin
-              </Button>
-            </div>
-          </div>
-        </>
-      )}
+      <div
+        className={`md:hidden bg-black transition-max-height duration-500 ease-in-out overflow-hidden ${
+          isClick ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <ul className="px-2 pt-2 pb-5 space-y-1 sm:px-3 list-none">
+          {["home", "features", "contact"].map((item) => (
+            <li
+              key={item}
+              onClick={() => scrollToSection(item)}
+              className="text-white block hover:bg-white hover:text-black rounded-lg p-2 cursor-pointer"
+            >
+              {item.charAt(0).toUpperCase() + item.slice(1)}
+            </li>
+          ))}
+          <li>
+            <Button variant="subscribe" className="bg-spotify-gradient">
+              Login to Admin
+            </Button>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 }

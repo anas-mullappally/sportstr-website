@@ -75,7 +75,10 @@ module.exports = {
       },
       boxShadow: {
         'custom': 'rgba(109, 220, 149, 0.1) 0px 1px 1px 0px inset, rgba(109, 220, 149, 0.25) 0px 50px 100px -20px, rgba(109, 220, 149, 0.3) 0px 30px 60px -30px',
-      }
+      },
+      transitionProperty: {
+        'max-height': 'max-height',
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

@@ -60,7 +60,7 @@ function Features() {
     },
   ];
   return (
-    <div className="w-full mt-8">
+    <div className="w-full mt-8" id="features">
       <div className="w-full xl:px-36 lg:px-20 md:px-20 px-8 ">
         <h1 className="text-2xl md:text-5xl font-semibold text-center ">
           Powerful Features for <br />{" "}
