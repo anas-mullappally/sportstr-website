@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
         {/* icon  */}
         <link rel="icon" href="/favicon.png" />
         {/* Google Tag Manager  */}
-        <Script
+        {/* <Script
           id="gtm-script"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -50,20 +50,20 @@ export default function RootLayout({ children }) {
     })(window,document,'script','dataLayer','GTM-K5J68JFP');
   `,
           }}
-        />
+        /> */}
         {/* End Google Tag Manager */}
       </head>
       {/* <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GM_TAG} /> */}
       <body className={cabin.className}>
         {/* Google Tag Manager (noscript)  */}
-        <noscript>
+        {/* <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-K5J68JFP"
             height="0"
             width="0"
             style="display:none;visibility:hidden"
           ></iframe>
-        </noscript>
+        </noscript> */}
         {/* End Google Tag Manager (noscript) */}
         <Header />
         {children}
