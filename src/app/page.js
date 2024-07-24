@@ -15,11 +15,14 @@ export default function Home() {
         <HeroSection />
         {/* <AcademyBanner /> */}
         <Partners />
-        <AdvantageSection />
-        <Features />
-        <TestimonialCarousel />
-        <FreeDemoBanner />
-        <FaqSection />
+
+        <div className="bg-mid-gradient">
+          <AdvantageSection />
+          <Features />
+          <TestimonialCarousel />
+          <FreeDemoBanner />
+          <FaqSection />
+        </div>
         <ContactUs />
       </div>
     </>
