@@ -47,14 +47,14 @@ export const metadata = {
     title: "Sportstr",
     description: `Simplify, Manage and Enhance Your Coaching Operations`,
     images: {
-      url: `${process.env.NEXT_PUBLIC_WEB_URL}/logo.svg`,
+      url: `${process.env.NEXT_PUBLIC_WEB_URL}/home.png`,
     },
   },
   openGraph: {
     title: "Sportstr",
     description: `Simplify, Manage and Enhance Your Coaching Operations`,
     images: {
-      url: `${process.env.NEXT_PUBLIC_WEB_URL}/logo.svg`,
+      url: `${process.env.NEXT_PUBLIC_WEB_URL}/home.png`,
     },
   },
 };
