@@ -3,8 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { GoogleTagManager } from "@next/third-parties/google";
-import Script from "next/script";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 
 const cabin = Cabin({ subsets: ["latin"] });
 
@@ -31,6 +30,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
         <SpeedInsights />
+        <GoogleAnalytics gaId="G-0YDEMZ64Z0" />
       </body>
     </html>
   );
