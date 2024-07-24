@@ -2,7 +2,8 @@ import { Cabin } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const cabin = Cabin({ subsets: ["latin"] });
 
@@ -36,6 +37,7 @@ export default function RootLayout({ children }) {
         {/* icon  */}
         <link rel="icon" href="/favicon.png" />
       </head>
+      <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GM_TAG} />
       <body className={cabin.className}>
         <Header />
         {children}
