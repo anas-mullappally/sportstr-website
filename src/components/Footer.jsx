@@ -98,7 +98,7 @@ function Footer() {
           </div>
 
           {emailError && <p className="text-red-500">{emailError}</p>}
-          {success && <p className="text-green-500">You're subscribed !</p>}
+          {success && <p className="text-green-500">{"You're subscribed !"}</p>}
         </form>
 
         <p id="helper-text-explanation" className="mt-3 text-sm ">
