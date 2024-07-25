@@ -210,6 +210,18 @@ function ContactUs() {
             <p className="text-gray-500">
               Showing the location of the SportStr office
             </p>
+
+            <div className="w-full mt-10">
+              <GoogleMapsEmbed
+                apiKey={process.env.NEXT_PUBLIC_GOOGLE_API}
+                height={350}
+                width="100%"
+                mode="place"
+                q="WHF9+FC Bengaluru, Karnataka, India"
+                className="rounded-lg"
+                title="Map of Bengaluru, Karnataka, India"
+              />
+            </div>
           </div>
         </div>
       </div>
