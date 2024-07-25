@@ -1,12 +1,37 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 import { scrollToSection, sections } from "@/utils/utils";
 
 function Header() {
   const [isClick, setIsClick] = useState(false);
+  const [currentSection, setCurrentSection] = useState("");
+
+  useEffect(() => {
+    //function to get current section while scrolling
+    const handleScroll = () => {
+      let current = "";
+      sections.forEach((section) => {
+        const sectionElement = document.getElementById(section);
+        if (sectionElement) {
+          const rect = sectionElement.getBoundingClientRect();
+          if (
+            rect.top <= window.innerHeight / 2 &&
+            rect.bottom >= window.innerHeight / 2
+          ) {
+            current = section;
+          }
+        }
+      });
+      setCurrentSection(current);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <nav className="bg-black py-6 sticky top-0 z-50">
@@ -26,18 +51,22 @@ function Header() {
                 <li
                   key={item}
                   onClick={() => scrollToSection(item)}
-                  className="text-white hover:text-green-600 rounded-lg p-2 cursor-pointer"
+                  className={` hover:text-green-600 rounded-lg p-2 cursor-pointer ${
+                    currentSection === item ? "text-green-600" : "text-white"
+                  }`}
                 >
                   {item.charAt(0).toUpperCase() + item.slice(1)}
                 </li>
               ))}
               <li>
                 <Button variant="subscribe" className="bg-spotify-gradient">
-                  Login to Admin
+                  Login to Your Academy
                 </Button>
               </li>
             </ul>
           </div>
+
+          {/* mobile menu */}
 
           <div className="md:hidden flex items-center">
             <button
@@ -93,14 +122,16 @@ function Header() {
                 scrollToSection(item);
                 setIsClick(false);
               }}
-              className="text-white block hover:bg-green-600  rounded-lg p-2 cursor-pointer"
+              className={`text-white block hover:bg-green-600 rounded-lg p-2 cursor-pointer ${
+                currentSection === item ? "bg-green-600" : ""
+              }`}
             >
               {item.charAt(0).toUpperCase() + item.slice(1)}
             </li>
           ))}
           <li className="p-2">
             <Button variant="subscribe" className="bg-spotify-gradient">
-              Login to Admin
+              Login to Your Academy
             </Button>
           </li>
         </ul>
