@@ -71,7 +71,9 @@ function Footer() {
             </div>
           </div>
 
-          <div className="flex mt-4 md:mt-0 items-start space-x-5 rtl:space-x-reverse">
+          {/* social media logos */}
+
+          {/* <div className="flex mt-4 md:mt-0 items-start space-x-5 rtl:space-x-reverse">
             <Link href="#" className=" hover:text-green-600 ">
               <Image
                 src={"/fb-logo.svg"}
@@ -117,7 +119,7 @@ function Footer() {
                 className="w-6 h-6 rounded-full "
               ></Image>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

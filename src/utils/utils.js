@@ -1,4 +1,4 @@
-export const sections = ["home", "features", "contact"]; // Make sure that you have included the section ID in the added section.
+export const sections = ["home", "features", "contact"]; //  section IDs
 
 export const scrollToSection = (id) => {
   const section = document.getElementById(id);

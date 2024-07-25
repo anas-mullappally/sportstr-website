@@ -60,7 +60,7 @@ function Features() {
     },
   ];
   return (
-    <div className="w-full mt-8" id="features">
+    <div className="w-full mt-8 md:py-10" id="features">
       <div className="w-full xl:px-36 lg:px-20 md:px-20 px-8 ">
         <h1 className="text-2xl md:text-5xl font-semibold text-center ">
           Powerful Features for <br />{" "}
@@ -72,7 +72,7 @@ function Features() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:gap-10 gap-6 lg:gap-4">
             {features.map((feature) => (
               <div
-                className="bg-white p-6 xl:p-8  border border-green-400 hover:border-green-600 rounded-md cursor-pointer hover:shadow-custom"
+                className="bg-white p-6 xl:p-8  border border-green-400 hover:border-green-600 rounded-md "
                 key={feature.id}
               >
                 <div className="flex ">
@@ -85,7 +85,7 @@ function Features() {
                   />
                 </div>
                 <div className="flex mt-6 justify-between w-full">
-                  <div className="flex flex-col w-3/4 ">
+                  <div className="flex flex-col ">
                     <h2 className="xl:text-xl font-semibold">
                       {feature.title}
                     </h2>
@@ -93,7 +93,9 @@ function Features() {
                       {feature.description}
                     </p>
                   </div>
-                  <div className="w-1/4 flex items-end  justify-end  ">
+
+                  {/* arrow button */}
+                  {/* <div className="w-1/4 flex items-end  justify-end  ">
                     <Image
                       src={"/arrow.svg"}
                       alt="arrow"
@@ -101,7 +103,7 @@ function Features() {
                       width={100}
                       height={150}
                     />
-                  </div>
+                  </div> */}
                 </div>
               </div>
             ))}

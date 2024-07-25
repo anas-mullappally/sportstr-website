@@ -1,4 +1,8 @@
+"use client";
+
 import Image from "next/image";
+import { Button } from "./ui/button";
+import { scrollToSection, sections } from "@/utils/utils";
 
 function HeroSection() {
   return (
@@ -26,6 +30,7 @@ function HeroSection() {
             id="start-button"
             className="hidden md:block text-white py-3 px-2 rounded-2xl bg-spotify-gradient"
             aria-label="Start for less than a cost of a coffee per student"
+            onClick={() => scrollToSection("contact")}
           >
             <span className="text-xl">Start for less</span>
             <br />
@@ -50,6 +55,7 @@ function HeroSection() {
 
         {/* Mobile button */}
         <button
+          onClick={() => scrollToSection("contact")}
           id="start-button"
           className="md:hidden text-white p-4 mt-5  w-full rounded-2xl bg-spotify-gradient"
           aria-label="Start for less than a cost of a coffee per student"

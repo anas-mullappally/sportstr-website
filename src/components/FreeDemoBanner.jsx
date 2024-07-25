@@ -1,5 +1,9 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
+import { Button } from "./ui/button";
+import { scrollToSection, sections } from "@/utils/utils";
 
 function FreeDemoBanner() {
   return (
@@ -16,9 +20,14 @@ function FreeDemoBanner() {
           <h1 className="text-xl sm:text-2xl md:text-4xl font-bold">
             Ready to take your Academy to the next level?
           </h1>
-          <button className="p-3 bg-spotify-gradient rounded-md text-white text-sm sm:text-base border-green-400 border">
+
+          <Button
+            variant="subscribe"
+            className="bg-spotify-gradient py-6"
+            onClick={() => scrollToSection("contact")}
+          >
             Request for a Free Demo
-          </button>
+          </Button>
         </div>
       </div>
     </div>

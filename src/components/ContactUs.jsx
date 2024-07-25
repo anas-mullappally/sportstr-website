@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
@@ -113,7 +113,10 @@ function ContactUs() {
   };
 
   return (
-    <div className="w-full pb-24 xl:px-36 lg:px-20 md:px-20 px-8" id="contact">
+    <div
+      className="w-full pb-24 xl:px-36 lg:px-20 md:px-20 px-8 md:pt-10 "
+      id="contact"
+    >
       <h1 className="text-2xl md:text-5xl font-semibold text-center md:pb-10 pb-5">
         Contact <span className="text-green-500">Us</span>
       </h1>
@@ -127,10 +130,16 @@ function ContactUs() {
                 type="text"
                 id="name"
                 placeholder="John Doe"
-                className="h-12"
+                className="h-12 placeholder-transparent focus:placeholder-transparent"
                 value={formData.name}
                 onChange={handleChange}
-                // required
+                onFocus={(e) =>
+                  e.target.classList.add("placeholder-transparent")
+                }
+                onBlur={(e) =>
+                  e.target.value === "" &&
+                  e.target.classList.remove("placeholder-transparent")
+                }
               />
               {formErrors.name && (
                 <p className="text-red-500">{formErrors.name}</p>
@@ -142,10 +151,16 @@ function ContactUs() {
                 type="email"
                 id="email"
                 placeholder="example@yourmail.com"
-                className="h-12"
+                className="h-12 placeholder-transparent focus:placeholder-transparent"
                 value={formData.email}
                 onChange={handleChange}
-                // required
+                onFocus={(e) =>
+                  e.target.classList.add("placeholder-transparent")
+                }
+                onBlur={(e) =>
+                  e.target.value === "" &&
+                  e.target.classList.remove("placeholder-transparent")
+                }
               />
               {formErrors.email && (
                 <p className="text-red-500">{formErrors.email}</p>
@@ -156,10 +171,16 @@ function ContactUs() {
               <Textarea
                 placeholder="Hello there, I would like to talk about how to..."
                 id="message"
-                className="h-36"
+                className="h-36 placeholder-transparent focus:placeholder-transparent"
                 value={formData.message}
                 onChange={handleChange}
-                // required
+                onFocus={(e) =>
+                  e.target.classList.add("placeholder-transparent")
+                }
+                onBlur={(e) =>
+                  e.target.value === "" &&
+                  e.target.classList.remove("placeholder-transparent")
+                }
               />
               {formErrors.message && (
                 <p className="text-red-500">{formErrors.message}</p>
@@ -172,7 +193,7 @@ function ContactUs() {
                 type="submit"
                 disabled={loading}
               >
-                {loading ? "Sending..." : "Send Message"}
+                {loading ? "Sending..." : "Submit"}
               </Button>
             </div>
           </form>
@@ -193,7 +214,7 @@ function ContactUs() {
         </div>
       </div>
       {/* MAP */}
-      <div className="pt-14 w-full flex items-center justify-center flex-col gap-4">
+      {/* <div className="pt-14 w-full flex items-center justify-center flex-col gap-4">
         <h4 className="text-2xl font-semibold hidden md:block">Additional Contact Info</h4>
         <div className="map-container w-full h-[350px] rounded-lg md:mt-5 overflow-hidden">
           <GoogleMapsEmbed
@@ -206,7 +227,7 @@ function ContactUs() {
             title="Map of Bengaluru, Karnataka, India"
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
